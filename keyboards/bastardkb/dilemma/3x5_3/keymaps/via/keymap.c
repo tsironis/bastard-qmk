@@ -49,7 +49,7 @@ enum dilemma_keymap_layers {
        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, \
        KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L, KC_QUOT, \
        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, \
-                      CW_TOGG, TAB_FUN, SPC_NAV, ENT_SYM, BSP_NUM, KC_MUTE
+                      KC_ESC, SPC_NAV, TAB_FUN, ENT_SYM, BSP_NUM, KC_MUTE
 
 /** Convenience row shorthands. */
 #define _______________DEAD_HALF_ROW_______________ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
@@ -82,9 +82,9 @@ enum dilemma_keymap_layers {
 
 /** \brief Mouse emulation and pointer functions. */
 #define LAYOUT_LAYER_POINTER                                                                  \
-    QK_BOOT,  EE_CLR, XXXXXXX, DPI_MOD, S_D_MOD, S_D_MOD, DPI_MOD, XXXXXXX,  EE_CLR, QK_BOOT, \
-    ______________HOME_ROW_GACS_L______________, ______________HOME_ROW_GACS_R______________, \
-    _______, DRGSCRL, SNIPING, KC_BTN3, XXXXXXX, XXXXXXX, KC_BTN3, SNIPING, DRGSCRL, _______, \
+    QK_BOOT,  EE_CLR, XXXXXXX, DPI_RMOD, S_D_RMOD, S_D_MOD, DPI_MOD, XXXXXXX,  EE_CLR, QK_BOOT, \
+    ______________HOME_ROW_GACS_L______________, XXXXXXX, KC_MS_WH_UP, KC_MS_WH_DOWN, XXXXXXX, XXXXXXX, \
+    _______, DRGSCRL, SNIPING, KC_BTN3, KC_BTN4, KC_BTN5, KC_BTN3, SNIPING, DRGSCRL, _______, \
                       KC_BTN3, KC_BTN2, KC_BTN1, KC_BTN1, KC_BTN2, KC_BTN3
 
 /**
@@ -97,8 +97,8 @@ enum dilemma_keymap_layers {
  */
 #define LAYOUT_LAYER_NAVIGATION                                                               \
     _______________DEAD_HALF_ROW_______________, _______________DEAD_HALF_ROW_______________, \
-    ______________HOME_ROW_GACS_L______________, KC_CAPS, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, \
-    _______________DEAD_HALF_ROW_______________,  KC_INS, KC_HOME, KC_PGDN, KC_PGUP,  KC_END, \
+    ______________HOME_ROW_GACS_L______________, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT,  KC_CAPS, \
+    _______________DEAD_HALF_ROW_______________,  KC_HOME, KC_PGDN, KC_PGUP,  KC_END, CW_TOGG, \
                       XXXXXXX, XXXXXXX, _______,  KC_ENT, KC_BSPC, KC_DEL
 
 /**
