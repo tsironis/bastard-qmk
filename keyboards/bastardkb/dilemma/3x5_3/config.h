@@ -77,7 +77,7 @@
 #    define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_CYCLE_LEFT_RIGHT
 
 // Slow swirl at startup.
-#    define RGB_MATRIX_DEFAULT_SPD 32
+#    define RGB_MATRIX_DEFAULT_SPD 50
 
 // Enable all animations on ARM boards since they have plenty of memory
 // available for it.
