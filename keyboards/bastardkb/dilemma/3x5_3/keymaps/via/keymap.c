@@ -112,7 +112,7 @@ enum dilemma_keymap_layers {
     KC_LBRC,    KC_7,    KC_8,    KC_9, KC_RBRC, _______________DEAD_HALF_ROW_______________, \
     KC_SCLN,    KC_4,    KC_5,    KC_6,  KC_EQL, ______________HOME_ROW_GACS_R______________, \
      KC_DOT,    KC_1,    KC_2,    KC_3, KC_BSLS, _______________DEAD_HALF_ROW_______________, \
-                       KC_DOT, KC_MINS,    KC_0, XXXXXXX, _______, XXXXXXX
+                       KC_GRV, KC_MINS,    KC_0, XXXXXXX, _______, XXXXXXX
 
 /**
  * \brief Symbols layer.
@@ -125,7 +125,7 @@ enum dilemma_keymap_layers {
     KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR, _______________DEAD_HALF_ROW_______________, \
     KC_COLN,  KC_DLR, KC_PERC, KC_CIRC, KC_PLUS, ______________HOME_ROW_GACS_R______________, \
     KC_TILD, KC_EXLM,   KC_AT, KC_HASH, KC_PIPE, _______________DEAD_HALF_ROW_______________, \
-                      KC_LPRN,  KC_GRV, KC_UNDS, _______, XXXXXXX, XXXXXXX
+                      KC_LPRN,  KC_RPRN, KC_UNDS, _______, XXXXXXX, XXXXXXX
 
 /**
  * \brief Add Home Row mod to a layout.
