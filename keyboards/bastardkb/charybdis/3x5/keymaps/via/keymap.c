@@ -108,11 +108,11 @@ static uint16_t auto_pointer_layer_timer = 0;
     XXXXXXX, XXXXXXX, XXXXXXX,  EE_CLR, QK_BOOT, QK_BOOT,  EE_CLR, XXXXXXX, XXXXXXX, XXXXXXX, \
                       _______, KC_MPLY, KC_MSTP, KC_MSTP, KC_MPLY
 
-/** \brief Mouse emulation and pointer functions. */
+/** \brief Mouse emulation and pEE_CLREE_CLREE_CLREE_CLRointer functions. */
 #define LAYOUT_LAYER_POINTER                                                                  \
-    XXXXXXX, XXXXXXX, XXXXXXX, DPI_MOD, S_D_MOD, S_D_MOD, DPI_MOD, XXXXXXX, XXXXXXX, XXXXXXX, \
-    ______________HOME_ROW_GACS_L______________, ______________HOME_ROW_GACS_R______________, \
-    _______, DRGSCRL, SNIPING,  EE_CLR, QK_BOOT, QK_BOOT,  EE_CLR, SNIPING, DRGSCRL, _______, \
+    QK_BOOT, EE_CLR, XXXXXXX, DPI_MOD, S_D_MOD, S_D_MOD, DPI_MOD, XXXXXXX, XXXXXXX, XXXXXXX, \
+    ______________HOME_ROW_GACS_L______________, XXXXXXX, KC_MS_WH_UP, KC_MS_WH_DOWN,  EE_CLR, QK_BOOT, \
+    _______, DRGSCRL, SNIPING,  XXXXXXX, KC_BTN4, KC_BTN5,  XXXXXXX, SNIPING, DRGSCRL, _______, \
                       KC_BTN2, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1
 
 /**
@@ -125,8 +125,8 @@ static uint16_t auto_pointer_layer_timer = 0;
  */
 #define LAYOUT_LAYER_NAVIGATION                                                               \
     _______________DEAD_HALF_ROW_______________, _______________DEAD_HALF_ROW_______________, \
-    ______________HOME_ROW_GACS_L______________, KC_CAPS, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, \
-    _______________DEAD_HALF_ROW_______________,  KC_INS, KC_HOME, KC_PGDN, KC_PGUP,  KC_END, \
+    ______________HOME_ROW_GACS_L______________, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, KC_CAPS, \
+    _______________DEAD_HALF_ROW_______________,  KC_HOME, KC_PGDN, KC_PGUP,  KC_END, CW_TOGG, \
                       XXXXXXX, _______, XXXXXXX,  KC_ENT, KC_BSPC
 
 /**
