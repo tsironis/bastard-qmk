@@ -85,7 +85,7 @@ enum dilemma_keymap_layers {
     QK_BOOT,  EE_CLR, XXXXXXX, DPI_RMOD, S_D_RMOD, S_D_MOD, DPI_MOD, XXXXXXX,  EE_CLR, QK_BOOT, \
     ______________HOME_ROW_GACS_L______________, XXXXXXX, KC_MS_WH_UP, KC_MS_WH_DOWN, XXXXXXX, XXXXXXX, \
     _______, DRGSCRL, SNIPING, KC_BTN3, KC_BTN4, KC_BTN5, KC_BTN3, SNIPING, DRGSCRL, _______, \
-                      KC_BTN3, KC_BTN2, KC_BTN1, KC_BTN1, KC_BTN2, KC_BTN3
+                      KC_BTN2, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1, KC_BTN2
 
 /**
  * \brief Navigation layer.
@@ -111,8 +111,8 @@ enum dilemma_keymap_layers {
 #define LAYOUT_LAYER_NUMERAL                                                                  \
     KC_LBRC,    KC_7,    KC_8,    KC_9, KC_RBRC, _______________DEAD_HALF_ROW_______________, \
     KC_SCLN,    KC_4,    KC_5,    KC_6,  KC_EQL, ______________HOME_ROW_GACS_R______________, \
-     KC_DOT,    KC_1,    KC_2,    KC_3, KC_BSLS, _______________DEAD_HALF_ROW_______________, \
-                       KC_GRV, KC_MINS,    KC_0, XXXXXXX, _______, XXXXXXX
+     KC_GRV,    KC_1,    KC_2,    KC_3, KC_BSLS, _______________DEAD_HALF_ROW_______________, \
+                       KC_DOT, KC_0,    KC_MINS, XXXXXXX, _______, XXXXXXX
 
 /**
  * \brief Symbols layer.
