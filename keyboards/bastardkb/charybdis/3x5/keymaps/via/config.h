@@ -32,5 +32,40 @@
 // Automatically enable the pointer layer when moving the trackball.  See also:
 // - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS`
 // - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD`
-// #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
+#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #endif // POINTING_DEVICE_ENABLE
+#define CHARYBDIS_MINIMUM_DEFAULT_DPI 1200
+
+#ifndef TAPPING_TERM
+#    define TAPPING_TERM 160
+#endif // TAPPING_TERM
+
+/**
+ * Enable rapid switch from tap to hold.  Disable auto-repeat when pressing key
+ * twice, except for one-shot keys.
+ *
+ * See docs.qmk.fm/using-qmk/software-features/tap_hold#tapping-force-hold
+ */
+#define QUICK_TAP_TERM 0
+
+/*
+ * Tap-or-Hold decision modes.
+ *
+ * Note that the following flags behave differently when combined (ie. when 2 or
+ * more are enabled).
+ *
+ * See bit.ly/tap-or-hold for a visual explanation of the following tap-or-hold
+ * decision modes.
+ */
+
+/**
+ * Faster tap-hold trigger.
+ *
+ * Without `PERMISSIVE_HOLD`, within `TAPPING_TERM`:
+ *   Mod(a)🠗 e🠗 e🠕 Mod(a)🠕 ➞ ae
+ * With `PERMISSIVE_HOLD`, within `TAPPING_TERM`:
+ *   Mod(a)🠗 e🠗 e🠕 Mod(a)🠕 ➞ Mod+e
+ *
+ * See docs.qmk.fm/using-qmk/software-features/tap_hold#permissive-hold
+ */
+#define PERMISSIVE_HOLD
