@@ -111,7 +111,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 /** \brief Mouse emulation and pEE_CLREE_CLREE_CLREE_CLRointer functions. */
 #define LAYOUT_LAYER_POINTER                                                                  \
     QK_BOOT, EE_CLR, XXXXXXX, DPI_MOD, S_D_MOD, S_D_MOD, DPI_MOD, XXXXXXX, XXXXXXX, XXXXXXX, \
-    ______________HOME_ROW_GACS_L______________, XXXXXXX, KC_MS_WH_UP, KC_MS_WH_DOWN,  EE_CLR, QK_BOOT, \
+    ______________HOME_ROW_GACS_L______________, ______________HOME_ROW_GACS_R______________, \
     _______, DRGSCRL, SNIPING,  XXXXXXX, KC_BTN4, KC_BTN5,  XXXXXXX, SNIPING, DRGSCRL, _______, \
                       KC_BTN2, KC_BTN1, KC_BTN3, KC_BTN3, KC_BTN1
 

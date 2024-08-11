@@ -32,12 +32,12 @@
 // Automatically enable the pointer layer when moving the trackball.  See also:
 // - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS`
 // - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD`
-#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
+   #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #endif // POINTING_DEVICE_ENABLE
 #define CHARYBDIS_MINIMUM_DEFAULT_DPI 1200
 
 #ifndef TAPPING_TERM
-#    define TAPPING_TERM 160
+#    define TAPPING_TERM 140
 #endif // TAPPING_TERM
 
 /**
@@ -46,7 +46,7 @@
  *
  * See docs.qmk.fm/using-qmk/software-features/tap_hold#tapping-force-hold
  */
-#define QUICK_TAP_TERM 0
+#define QUICK_TAP_TERM 120
 
 /*
  * Tap-or-Hold decision modes.
@@ -69,3 +69,4 @@
  * See docs.qmk.fm/using-qmk/software-features/tap_hold#permissive-hold
  */
 #define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEY_PRESS
